@@ -97,8 +97,8 @@ function setup() {
 
 function draw() {
   background("black")
-  bgSound.play();
-  bgSound.setVolume(0.5)
+  /*bgSound.play();
+  bgSound.setVolume(0.5)*/
   if (gameState === 0) {        //in gamestate 0 the introductory img should
     startImgSprite.visible = true
   }
