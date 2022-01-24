@@ -1,5 +1,5 @@
 var bgImg, bg;
-var gameState = 2
+var gameState = 0
 var startImgSprite, startImg;
 var launchingSpaceCraft, launchingSpaceCraftImg;
 var spaceCraft, spaceCraftImg, spaceCraftImgRev;
@@ -99,7 +99,7 @@ function draw() {
   background("black")
   /*bgSound.play();
   bgSound.setVolume(0.5)*/
- /* if (gameState === 0) {        //in gamestate 0 the introductory img should
+ if (gameState === 0) {        //in gamestate 0 the introductory img should
     startImgSprite.visible = true
   }
   if (keyCode === 13) {
@@ -111,7 +111,7 @@ function draw() {
     if (launchingSpaceCraft.y < -250) {
       gameState = 2
     }
-  }*/
+  }
    if (!bgSound.isPlaying()) {
 
       bgSound.play();
